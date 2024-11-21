@@ -10,6 +10,4 @@ class TestScheduler(unittest.TestCase):
 
     def test_scheduler(self):
 
-        print(self.payroll_generator.generate_periods())
-
         self.assertIsInstance(self.payroll_generator.generate_periods(), pd.DataFrame)
