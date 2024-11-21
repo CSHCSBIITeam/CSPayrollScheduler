@@ -1,6 +1,6 @@
 import unittest
 import pandas as pd
-from src.main import PayrollPeriodGenerators
+from cs_payroll_scheduler.main import PayrollPeriodGenerators
 
 class TestScheduler(unittest.TestCase):
 
@@ -9,5 +9,7 @@ class TestScheduler(unittest.TestCase):
         self.payroll_generator= PayrollPeriodGenerators(12,12)
 
     def test_scheduler(self):
+
+        print(self.payroll_generator.generate_periods())
 
         self.assertIsInstance(self.payroll_generator.generate_periods(), pd.DataFrame)

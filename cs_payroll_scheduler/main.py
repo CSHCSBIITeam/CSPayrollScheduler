@@ -1,5 +1,5 @@
 import pandas as pd
-from src.tools.create_payroll_range import date_range
+from cs_payroll_scheduler.tools.create_payroll_range import date_range
 from datetime import timedelta, datetime
 
 class PayrollPeriodGenerators:
